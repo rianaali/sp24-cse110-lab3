@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffe6f0;
+    color: #ff69b4;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #ff1493;
+}
+
+h1 {
+    margin-bottom: 2em; 
+    padding: 5px; 
+    display: block;
+}
+
+li.important {
+    background-color: yellow;
+    padding: 10px 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+section {
+    border: 2px solid #ff69b4;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    position: relative;
+}
+
+h3#random {
+    color: rebeccapurple;
+    background-color: #ffe6f0;
+    padding: 5px;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+}
+
+a[href^="http"] {
+    color: red; 
+}
+
+.note {
+    font-style: italic;
+    font-weight: bold;
+    background-color: rgb(255, 224, 230); 
+    color: hsla(340, 100%, 50%, 0.8); 
+    padding: 10px;
+    margin: 20px; /* using shorthand */
+    padding-top: 10px; padding-right: 5px; padding-bottom: 10px; padding-left: 5px; /* using longhand */
+    border: 1px solid #ff69b4;
+    display: inline-block;
+    position: relative;
+
+}
+
+:root {
+    --main-bg-color: #ffe6f0;
+}
+
+footer {
+    color: var(--primary-color, pink);
+    border-top: 5px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; top: 0; 
+}
+
+p:hover, p:active {
+    color: #c71585;
+}
+
+p + p {
+    margin-top: 10px;
+}
+
+h3 ~ p {
+    border-top: 1px solid #ccc;
+}
+
+ul li + li {
+    border-top: 1px solid #ff69b4;
+}
+
+section > p {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: color(display-p3 1 0.5 0);
+    display: inline;
+
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+img {
+    width: 50%;
+    max-width: 250px;
+    height: auto;
+}
+
+
+audio {
+    display: none;
+}
+
+h1:has(+ p) {
+    margin-bottom: 0.25rem;
+}
+
+/* adjusting Flexbox for the ul element */
+ul {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* specific layout for agenda and attendance sections */
+.attendance, .agenda {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-color: var(--main-bg-color, pink);
+    }
+
+    header, footer {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    section {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+

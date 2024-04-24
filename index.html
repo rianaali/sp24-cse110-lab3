@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Pomodoro Timer First Brainstorm</title>
+    <style>
+        h1 {
+            font-family: 'Caveat', cursive;
+            color: #ff1493; 
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Pomodoro Timer First Brainstorm</h1>
+        <h1 style="font-size: 28px; text-align: center;">Pomodoro Timer First Brainstorm</h1>
         <h2>Meeting Details</h2>
     </header>
 
@@ -18,7 +26,7 @@
     <section>
         <h3>Attendance</h3>
         <ul>
-            <li>Mr. Monkey </li>
+            <li>Mr. Monkey</li>
             <li>Ms. Monkey</li>
             <li>Mr. Cat</li>
         </ul>
@@ -28,14 +36,14 @@
         <h3>Agenda</h3>
         <ol>
             <li>Introduction</li>
-            <li>Discuss new project ideas</li>
+            <li class="important">Discuss new project ideas</li>
             <li>Conclusion</li>
         </ol>
     </section>
 
     <section>
         <h3>Unfinished Business</h3>
-        <p>Finalize the design for the new application.</p>
+        <p>Finalize the design for the new application <strong>tonight</strong>.</p>
     </section>
 
     <section>
@@ -44,7 +52,7 @@
     </section>
 
     <section>
-        <h3>Miscellaneous</h3>
+        <h3 id="random">Miscellaneous</h3>
         <p>Discuss upcoming team bonding event</p>
     </section>
 
@@ -57,16 +65,15 @@
         <h3>Meeting Recordings</h3>
         <audio controls>
             <source src="media/soundfile.wav" type="audio/wav">
-           
         </audio>
         <video controls>
             <source src="media/wall2.mp4" type="video/mp4">
-            
         </video>
     </section>
 
     <footer>
-        <p>Minutes prepared by: Ms. Monkey</p>
+        <p class="note">Minutes prepared by: Ms. Monkey</p>
     </footer>
 </body>
 </html>
+
